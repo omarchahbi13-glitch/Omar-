@@ -1,0 +1,126 @@
+{
+ "caseoh_hydravion": {
+  "src": "multi/v/u04.mp4",
+  "words": "multi/v/u04.words.json",
+  "segments": [
+   [
+    15.0,
+    35.0
+   ]
+  ],
+  "layout": "split",
+  "cam": [
+   2,
+   142,
+   396,
+   292
+  ],
+  "game_x": 504,
+  "hook": "CASEOH POSE L'AVION SUR L'EAU",
+  "zooms": [
+   [
+    12.0,
+    14.5
+   ],
+   [
+    16.5,
+    19.5
+   ]
+  ],
+  "out": "out/2026-11-23/caseoh_hydravion.mp4"
+ },
+ "xqc_voiture": {
+  "src": "multi/v/u03.mp4",
+  "words": "multi/v/u03.words.json",
+  "segments": [
+   [
+    17.5,
+    33.0
+   ]
+  ],
+  "layout": "split",
+  "cam": [
+   2,
+   2,
+   358,
+   288
+  ],
+  "game_x": 540,
+  "drop_ranges": [
+   [
+    0,
+    18.0
+   ]
+  ],
+  "hook": "XQC VOLE SA PREMIÈRE VOITURE",
+  "zooms": [
+   [
+    10.5,
+    12.5
+   ]
+  ],
+  "out": "out/2026-11-23/xqc_voiture.mp4"
+ },
+ "kai_poursuite": {
+  "src": "multi/v/u02.mp4",
+  "words": "multi/v/u02.words.json",
+  "segments": [
+   [
+    0.0,
+    35.0
+   ]
+  ],
+  "layout": "split",
+  "cam": [
+   2,
+   724,
+   374,
+   352
+  ],
+  "game_x": 540,
+  "hook": "KAI CENAT EN PLEINE COURSE-POURSUITE",
+  "zooms": [
+   [
+    8.5,
+    10.8
+   ],
+   [
+    22.0,
+    24.5
+   ]
+  ],
+  "out": "out/2026-11-23/kai_poursuite.mp4"
+ },
+ "speed_tele": {
+  "src": "multi/v/s05.mp4",
+  "words": "multi/v/s05.words.json",
+  "segments": [
+   [
+    0.0,
+    14.0
+   ]
+  ],
+  "layout": "camfocus",
+  "cam": [
+   6,
+   464,
+   380,
+   228
+  ],
+  "fixes": {
+   "hell": "heck"
+  },
+  "hook": "SPEED DÉCOUVRE LA TÉLÉ DE GTA 6",
+  "zooms": [
+   [
+    2.2,
+    4.5
+   ],
+   [
+    6.3,
+    8.5
+   ]
+  ],
+  "out": "out/2026-11-24/speed_tele.mp4"
+ }
+}

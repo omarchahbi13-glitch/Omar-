@@ -2,9 +2,8 @@
  "_info": "Clips Twitch déjà traités (slug -> statut). Ne jamais reposter un slug présent ici.",
  "clips": {
   "GiantVainKoupreyFUNgineer-eQagp6AuaKFMkY-P": {
-   "statut": "publié",
-   "fichier": "1_plante.mp4",
-   "date": "2026-11-23 18:00"
+   "statut": "retiré du programme",
+   "fichier": "1_plante.mp4"
   },
   "SpinelessTacitCoffeeDansGame-05Kt2Q8ea7no9pq3": {
    "statut": "publié",
@@ -21,9 +20,8 @@
    "date": "2026-11-23 21:00"
   },
   "DirtyAdventurousKathyKlappa-tWYAq30bQrtKrpAK": {
-   "statut": "publié",
-   "fichier": "4_sourire.mp4",
-   "date": "2026-11-23 12:00"
+   "statut": "retiré du programme",
+   "fichier": "4_sourire.mp4"
   },
   "ShySmoothFrogFunRun-kUDAiGFJ4_SYYsYx": {
    "statut": "écarté",
@@ -33,7 +31,7 @@
    "statut": "publié",
    "chaine": "IShowSpeed",
    "jeu": "GTA VI",
-   "fichier": "2026-11-24/speed_braquage.mp4",
+   "fichier": "2026-11-24/speed_braquage_v2.mp4",
    "date": "2026-11-24 21:00"
   },
   "ComfortableEnticingAppleRuleFive-NvsuUlEFrEQSDBf0": {
@@ -80,6 +78,52 @@
    "chaine": "Michou",
    "jeu": "GTA VI",
    "raison": "menu console puis écran noir"
+  },
+  "CuriousBadEchidnaCoolStoryBro-g66TfyHbfF_r5vxZ": {
+   "statut": "publié",
+   "chaine": "caseoh_",
+   "jeu": "GTA VI",
+   "fichier": "2026-11-23/caseoh_hydravion.mp4",
+   "date": "2026-11-23 09:00"
+  },
+  "WealthyNimbleHamsterDansGame-yrU7UShZomelh1Ke": {
+   "statut": "publié",
+   "chaine": "xQc",
+   "jeu": "GTA VI",
+   "fichier": "2026-11-23/xqc_voiture.mp4",
+   "date": "2026-11-23 12:00"
+  },
+  "SincereMoldyGaragePartyTime-C2fuK1XJ2UtVfHel": {
+   "statut": "publié",
+   "chaine": "KaiCenat",
+   "jeu": "GTA VI",
+   "fichier": "2026-11-23/kai_poursuite.mp4",
+   "date": "2026-11-23 18:00"
+  },
+  "PrettyZanyClamANELE-2-oU00I2wzBdbVEA": {
+   "statut": "publié",
+   "chaine": "IShowSpeed",
+   "jeu": "GTA VI",
+   "fichier": "2026-11-24/speed_tele.mp4",
+   "date": "2026-11-24 09:00"
+  },
+  "ExquisiteInnocentGaragePoooound-mLDj-ot7Fg9JJjLA": {
+   "statut": "écarté",
+   "chaine": "KaiCenat",
+   "jeu": "GTA VI",
+   "raison": "scène sexuelle"
+  },
+  "RamshackleLaconicLapwingSpicyBoy-vXH5sbEmR5KAzDO7": {
+   "statut": "écarté",
+   "chaine": "Jynxzi",
+   "jeu": "GTA VI",
+   "raison": "quasi-nudité + drogue"
+  },
+  "ReliablePowerfulOilBatChest-ydNija0st6UB0byp": {
+   "statut": "écarté",
+   "chaine": "LIRIK",
+   "jeu": "GTA VI",
+   "raison": "pas de webcam"
   }
  }
 }
