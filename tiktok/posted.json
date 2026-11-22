@@ -1,0 +1,33 @@
+{
+ "_info": "Clips Twitch déjà traités (slug -> statut). Ne jamais reposter un slug présent ici.",
+ "clips": {
+  "GiantVainKoupreyFUNgineer-eQagp6AuaKFMkY-P": {
+   "statut": "publié",
+   "fichier": "1_plante.mp4",
+   "date": "2026-11-23 18:00"
+  },
+  "SpinelessTacitCoffeeDansGame-05Kt2Q8ea7no9pq3": {
+   "statut": "publié",
+   "fichier": "3_jumpscare.mp4",
+   "date": "2026-11-23 15:00"
+  },
+  "MistyTenderLEDGivePLZ-3zvbsMDKakx5wslX": {
+   "statut": "écarté",
+   "raison": "musique protégée"
+  },
+  "HomelyHungryGiraffeAMPEnergyCherry-wMODukG9tJt7V2eD": {
+   "statut": "publié",
+   "fichier": "2_crabe.mp4",
+   "date": "2026-11-23 21:00"
+  },
+  "DirtyAdventurousKathyKlappa-tWYAq30bQrtKrpAK": {
+   "statut": "publié",
+   "fichier": "4_sourire.mp4",
+   "date": "2026-11-23 12:00"
+  },
+  "ShySmoothFrogFunRun-kUDAiGFJ4_SYYsYx": {
+   "statut": "écarté",
+   "raison": "surtout une carte, sous-titres déjà incrustés"
+  }
+ }
+}
