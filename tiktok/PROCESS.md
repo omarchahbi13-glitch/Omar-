@@ -1,7 +1,35 @@
 # Méthode quotidienne — DO BRAZILLL CLIPS (TikTok)
 
-Objectif : chaque jour, monter **4 nouveaux clips** de Kameto (twitch.tv/kamet0) et les programmer sur TikTok via Metricool
-pour le **lendemain à 12:00, 15:00, 18:00 et 21:00 (Europe/Paris)**, en publication directe et publique.
+Objectif : chaque jour, monter **4 nouveaux clips** et les programmer sur TikTok via Metricool pour le **premier jour à venir
+qui n'a pas encore ses 4 posts** (vérifier avec getScheduledPosts), à **12:00, 15:00, 18:00 et 21:00 (Europe/Paris)**, en publication directe et publique.
+
+## Chaînes Twitch (toutes)
+| Chaîne Twitch | Hashtag streamer | Hashtag communauté |
+|---|---|---|
+| ishowspeed | #ishowspeed | #twitch |
+| kaicenat | #kaicenat | #twitch |
+| aminematue | #amine | #twitchfr |
+| anyme023 | #anyme | #twitchfr |
+| squeezie | #squeezie | #twitchfr |
+| michou | #michou | #twitchfr |
+| domingo | #domingo | #twitchfr |
+| kamet0 | #kameto | #twitchfr |
+
+## Ordre de priorité
+1. **GTA 6 d'abord** : clips dont la catégorie (`categories` dans `yt-dlp -j`) est `Grand Theft Auto VI`.
+2. Quand il n'y a plus de bon clip GTA 6 non publié : les autres clips de ces chaînes (Just Chatting, autres jeux…).
+3. Varier : **2 clips maximum par chaîne et par jour**, et ne pas mettre la même chaîne à deux créneaux consécutifs.
+4. Les clips en anglais (Speed, Kai Cenat) sont acceptés ; sous-titres en anglais, accroche en français.
+
+## Règles anti-blocage TikTok (obligatoires)
+- **Jamais** : nudité / scène sexuelle (même dans le jeu), violence réelle, drogue, propos haineux, mineurs en danger. Dans le doute, écarter.
+- Gros mots : toujours censurés dans les sous-titres (`fixes`, ex. f***, sh*t, p***) ; écarter un clip dont la vulgarité est le cœur.
+- Toujours un vrai montage (format vertical, bande, sous-titres, coupes, zooms) : jamais le clip brut.
+- Jamais deux fois le même clip (vérifier `posted.json`), jamais une vidéo déjà postée par un autre compte TikTok.
+- 4 posts par jour maximum, espacés de 3 h, toujours aux mêmes heures.
+- 5 hashtags maximum, pertinents ; pas de hashtags « follow4follow », « like4like » ou sans rapport.
+- `isAigc: false` (vidéo réelle montée), `commercialContent*` à false.
+- S'il y a moins de 4 bons clips, en programmer moins plutôt que des vidéos médiocres.
 
 ## 1. Préparer l'environnement (cloud)
 ```
@@ -11,8 +39,9 @@ cd tiktok/outils
 Le modèle Whisper se télécharge depuis Hugging Face : lancer avec `HF_HUB_DISABLE_XET=1`.
 
 ## 2. Choisir les clips
-- Lister les clips : `yt-dlp --flat-playlist --playlist-end 30 --print "%(url)s|%(title)s|%(view_count)s|%(duration)s" "https://www.twitch.tv/kamet0/clips?filter=clips&range=7d"`
-  (si moins de 4 nouveaux, essayer `range=30d`).
+- Lister les clips de chaque chaîne avec leur jeu :
+  `yt-dlp -j --skip-download --playlist-end 15 "https://www.twitch.tv/<chaine>/clips?filter=clips&range=7d"`
+  (champs utiles : `categories`, `view_count`, `duration`, `title`, `webpage_url` ; si trop peu, `range=30d`).
 - Ignorer tout slug déjà présent dans `tiktok/posted.json`.
 - Prendre les plus vus. Écarter : musique protégée en fond, écrans de chargement / carte, sous-titres déjà incrustés, contenu choquant.
 - Télécharger : `yt-dlp -f "best[height<=1080]" -o "clips/<n>.mp4" <url>` (les VOD sont réservées aux abonnés, seuls les clips sont accessibles).
@@ -41,9 +70,8 @@ Vérifier 3-4 images de chaque rendu (sous-titres lisibles, rien ne se superpose
   `tiktokData.title` obligatoire, `privacyOption: PUBLIC_TO_EVERYONE`.
 - Titre (`tiktokData.title`) : `ALLEZ VOIR DANS LA BIO` (toujours, demande du propriétaire du compte).
 - Texte (`text`) : `ALLEZ VOIR DANS LA BIO 🔗` puis 5 hashtags, dans cet ordre :
-  `#kameto` + 1 hashtag de contenu + `#twitchfr #fyp #pourtoi`.
-  Hashtag de contenu selon le clip : `#gta6` (GTA / RP), `#jumpscare` (peur, jeu d'horreur), `#karminecorp` (webcam, discussion, esport),
-  sinon le nom du jeu en un mot (ex. `#fortnite`, `#valorant`, `#minecraft`).
+  hashtag du streamer + hashtag du jeu + hashtag communauté + `#fyp #pourtoi` (voir le tableau des chaînes).
+  Hashtag du jeu : `#gta6` pour GTA VI, sinon le nom du jeu en un mot (ex. `#robrun`, `#fortnite`), ou `#humour` pour Just Chatting.
 
 ## 6. Ménage
 Supprimer du dépôt les dossiers `tiktok/<date>/` de plus de 7 jours (Metricool garde sa propre copie dès la programmation).
