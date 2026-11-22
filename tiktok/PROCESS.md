@@ -13,7 +13,9 @@ Refaire le classement de temps en temps : somme des vues des clips `Grand Theft 
 1. **GTA 6 d'abord** : clips dont la catégorie (`categories` dans `yt-dlp -j`) est `Grand Theft Auto VI`.
 2. Quand il n'y a plus de bon clip GTA 6 non publié : les autres clips de ces chaînes (Just Chatting, autres jeux…).
 3. Varier : **2 clips maximum par chaîne et par jour**, mélanger américains et français, et ne pas mettre la même chaîne à deux créneaux consécutifs.
-4. Les clips en anglais (Speed, Kai Cenat) sont acceptés ; sous-titres en anglais, accroche en français.
+4. Les clips en anglais sont acceptés ; sous-titres en anglais.
+5. **Accroche (`hook`) uniquement pour les streamers français.** Streamers non français : pas de champ `hook` du tout.
+6. Ignorer toute chaîne présente dans `tiktok/chaines_bloquees.json`.
 
 ## Règles anti-blocage TikTok (obligatoires)
 - **Jamais** : nudité / scène sexuelle (même dans le jeu), violence réelle, drogue, propos haineux, mineurs en danger. Dans le doute, écarter.
@@ -26,6 +28,15 @@ Refaire le classement de temps en temps : somme des vues des clips `Grand Theft 
 - 5 hashtags maximum, pertinents ; pas de hashtags « follow4follow », « like4like » ou sans rapport.
 - `isAigc: false` (vidéo réelle montée), `commercialContent*` à false.
 - S'il y a moins de 5 bons clips, en programmer moins plutôt que des vidéos médiocres.
+
+## 0. Surveillance des signalements (à faire en premier, chaque jour)
+- Avec les outils d'analyse Metricool (getAnalyticsAvailableMetrics puis getAnalyticsDataByMetrics, réseau `tiktok`, connecteur `posts`),
+  récupérer les vidéos TikTok publiées ces 3 derniers jours et les comparer aux publications prévues dans `posted.json`.
+- Signes d'un problème : vidéo prévue introuvable 12 h après son heure, statut d'erreur dans getScheduledPosts,
+  vidéo à 0 vue après 24 h, ou vues qui chutent à zéro pour toutes les vidéos d'une même chaîne.
+- En cas de problème sur une chaîne : l'ajouter dans `chaines_bloquees.json` avec `"statut": "en pause - à confirmer"`, la date et la raison,
+  ne plus l'utiliser, et commencer le résumé final par **« ⚠️ ALERTE »** (chaîne, vidéo, ce qui a été constaté) pour prévenir le propriétaire.
+- Le propriétaire décide ensuite : arrêt définitif de la chaîne ou changement de contenu.
 
 ## 1. Préparer l'environnement (cloud)
 ```
