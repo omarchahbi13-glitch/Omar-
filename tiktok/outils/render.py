@@ -9,6 +9,8 @@ import json, re, subprocess, sys
 
 W, H = 1080, 1920
 CAM_H = 640
+BAND = "brand/band.png"
+BAND_H = 64
 FONT = "Inter Display Black"
 
 
@@ -66,7 +68,7 @@ def clean(t):
 
 
 def ass(job, words, dur):
-    sub_y = CAM_H if job["layout"] == "split" else 1300
+    sub_y = CAM_H + BAND_H + 120 if job["layout"] == "split" else 1450
     hdr = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
@@ -138,17 +140,20 @@ def main():
         f.append("[cv]split[c1][c2]")
         f.append(f"[c1]crop={cw}:{ch}:{x}:{y},scale={W}:{CAM_H}:force_original_aspect_ratio=increase,"
                  f"scale=w='trunc({W}*{z}/2)*2':h='trunc({CAM_H}*{z}/2)*2':eval=frame,crop={W}:{CAM_H}[cam]")
-        f.append(f"[c2]crop=911:1080:{gx}:0,scale={W}:{H-CAM_H}[game]")
-        f.append("[cam][game]vstack[st]")
+        gh = H - CAM_H - BAND_H
+        gw = round(1080 * W / gh)
+        gx = min(max(gx + (911 - gw) // 2, 0), 1920 - gw)
+        f.append(f"[c2]crop={gw}:1080:{gx}:0,scale={W}:{gh},pad={W}:{H-CAM_H}:0:{BAND_H}[game]")
+        f.append("[cam][game]vstack[st0]")
     else:  # webcam-only source: tall crop around the face
         fx = job["face_x"]
         cw = 608
         f.append(f"[cv]crop={cw}:1080:{fx - cw // 2}:0,scale={W}:{H},"
-                 f"scale=w='trunc({W}*{z}/2)*2':h='trunc({H}*{z}/2)*2':eval=frame,crop={W}:{H}[st]")
-    badge = job.get("badge", "brand/badge.png")
-    f.append(f"[1:v]format=rgba,scale=iw*0.85:-1[bd];[st][bd]overlay=32:300:shortest=1,ass={assf},format=yuv420p[vo]")
+                 f"scale=w='trunc({W}*{z}/2)*2':h='trunc({H}*{z}/2)*2':eval=frame,crop={W}:{H}[st0]")
+    band_y = CAM_H
+    f.append(f"[st0][1:v]overlay=0:{band_y}:shortest=1,ass={assf},format=yuv420p[vo]")
     f.append("[ca]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[ao]")
-    cmd = ["ffmpeg", "-v", "error", "-y", "-i", job["src"], "-loop", "1", "-i", badge, "-filter_complex", ";".join(f),
+    cmd = ["ffmpeg", "-v", "error", "-y", "-i", job["src"], "-loop", "1", "-i", BAND, "-filter_complex", ";".join(f),
            "-map", "[vo]", "-map", "[ao]", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
            "-profile:v", "high", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", job["out"]]
     subprocess.run(cmd, check=True)
