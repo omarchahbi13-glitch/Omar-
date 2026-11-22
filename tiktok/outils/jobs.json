@@ -1,0 +1,17 @@
+[
+{"src":"clips/c00001.mp4","out":"out/1_plante.mp4","words":"clips/c1.M.words.json",
+ "segments":[[18.0,27.8],[32.6,41.0],[43.9,60.0]],"layout":"split","cam":[1528,172,388,226],"game_x":420,
+ "drop_ranges":[[36.5,38.1],[44.2,46.05],[46.85,47.2],[54.0,56.5]],
+ "hook":"IL A TOUT GÂCHÉ À CAUSE D'UNE PLANTE","zooms":[[6.7,9.8],[10.0,12.2],[27.0,29.5],[33.0,34.4]]},
+{"src":"clips/c00004.mp4","out":"out/2_crabe.mp4","words":"clips/c4.L.words.json",
+ "segments":[[0.8,18.5]],"layout":"split","cam":[1520,182,396,216],"game_x":504,
+ "drop_ranges":[[5.0,5.2]],"fixes":{"gagne":"gank","wesh":"wesh"},
+ "hook":"SE FAIRE GANK PAR UN CRABE...","zooms":[[0.7,2.4],[14.3,17.7]]},
+{"src":"clips/c00002.mp4","out":"out/3_jumpscare.mp4","words":"clips/c2.L.words.json",
+ "segments":[[2.5,13.5]],"layout":"split","cam":[1520,182,396,216],"game_x":504,
+ "fixes":{"pute":"p***"},
+ "hook":"IL NE S'Y ATTENDAIT PAS DU TOUT","zooms":[[4.85,7.2]]},
+{"src":"clips/c00005.mp4","out":"out/4_sourire.mp4","words":"clips/c5.words.json",
+ "segments":[[42.6,52.4]],"layout":"cam","face_x":1270,
+ "hook":"IL ESSAIE DE CACHER SON SOURIRE","zooms":[[5.9,7.6]]}
+]
