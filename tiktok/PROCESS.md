@@ -79,7 +79,7 @@ Vérifier 3-4 images de chaque rendu (sous-titres lisibles, rien ne se superpose
 - Texte (`text`) : `ALLEZ VOIR DANS LA BIO 🔗` + 5 hashtags (choix validé par le propriétaire) :
   - streamer **français** : `#<streamer> #<jeu> #twitchfr #fyp #pourtoi`
   - streamer **non français** : `#<streamer> #<jeu> #twitchclips #fyp #foryou`
-  - `#<jeu>` = `#gta6` pour GTA VI, sinon le nom du jeu en un mot (ex. `#robrun`), ou `#humour` pour Just Chatting.
+  - `#<jeu>` = `#gta6` pour GTA VI ; **sinon pas le nom du jeu** : `#humour` (streamer français) ou `#funny` (streamer non français).
   - hashtag du streamer : #ishowspeed, #kaicenat, #xqc, #caseoh, #jynxzi, #lirik, #hasanabi, #summit1g, #squeezie, #anyme, #gotaga,
     #michou, #domingo, #kameto, #zerator, #amine.
 
