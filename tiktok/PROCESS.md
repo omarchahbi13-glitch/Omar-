@@ -76,9 +76,12 @@ Vérifier 3-4 images de chaque rendu (sous-titres lisibles, rien ne se superpose
 - Metricool `createScheduledPost` : blogId `8290985`, provider `tiktok`, `autoPublish: true`, timezone `Europe/Paris`,
   `tiktokData.title` obligatoire, `privacyOption: PUBLIC_TO_EVERYONE`.
 - Titre (`tiktokData.title`) : `ALLEZ VOIR DANS LA BIO` (toujours, demande du propriétaire du compte).
-- Texte (`text`) : `ALLEZ VOIR DANS LA BIO 🔗 #<streamer> #fyp #foryou #viral #pourtoi`
-  (hashtag du streamer : #ishowspeed, #kaicenat, #xqc, #caseoh, #jynxzi, #lirik, #hasanabi, #summit1g, #squeezie, #anyme, #gotaga,
-  #michou, #domingo, #kameto, #zerator, #amine). Pas de hashtag de jeu : demande du propriétaire.
+- Texte (`text`) : `ALLEZ VOIR DANS LA BIO 🔗` + 5 hashtags (choix validé par le propriétaire) :
+  - streamer **français** : `#<streamer> #<jeu> #twitchfr #fyp #pourtoi`
+  - streamer **non français** : `#<streamer> #<jeu> #twitchclips #fyp #foryou`
+  - `#<jeu>` = `#gta6` pour GTA VI, sinon le nom du jeu en un mot (ex. `#robrun`), ou `#humour` pour Just Chatting.
+  - hashtag du streamer : #ishowspeed, #kaicenat, #xqc, #caseoh, #jynxzi, #lirik, #hasanabi, #summit1g, #squeezie, #anyme, #gotaga,
+    #michou, #domingo, #kameto, #zerator, #amine.
 
 ## Mises en page de render.py
 - `split` : webcam (`cam: [x,y,w,h]`) en haut, bande, jeu en bas (`game_x`).
