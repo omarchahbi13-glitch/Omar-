@@ -39,8 +39,11 @@ Vérifier 3-4 images de chaque rendu (sous-titres lisibles, rien ne se superpose
   (vérifier le code 200 avec curl avant de programmer).
 - Metricool `createScheduledPost` : blogId `8290985`, provider `tiktok`, `autoPublish: true`, timezone `Europe/Paris`,
   `tiktokData.title` obligatoire, `privacyOption: PUBLIC_TO_EVERYONE`.
-- Description : 1 phrase accrocheuse + emoji + une question si possible, puis 5 hashtags :
-  `#kameto` + 2-3 de niche (jeu : `#gta6`, `#gtarp`, `#jumpscare`… ; communauté : `#karminecorp`, `#kcorp`) + `#twitchfr #pourtoi`.
+- Titre (`tiktokData.title`) : `ALLEZ VOIR DANS LA BIO` (toujours, demande du propriétaire du compte).
+- Texte (`text`) : `ALLEZ VOIR DANS LA BIO 🔗` puis 5 hashtags, dans cet ordre :
+  `#kameto` + 1 hashtag de contenu + `#twitchfr #fyp #pourtoi`.
+  Hashtag de contenu selon le clip : `#gta6` (GTA / RP), `#jumpscare` (peur, jeu d'horreur), `#karminecorp` (webcam, discussion, esport),
+  sinon le nom du jeu en un mot (ex. `#fortnite`, `#valorant`, `#minecraft`).
 
 ## 6. Ménage
 Supprimer du dépôt les dossiers `tiktok/<date>/` de plus de 7 jours (Metricool garde sa propre copie dès la programmation).
