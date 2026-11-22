@@ -1,35 +1,31 @@
 # Méthode quotidienne — DO BRAZILLL CLIPS (TikTok)
 
-Objectif : chaque jour, monter **4 nouveaux clips** et les programmer sur TikTok via Metricool pour le **premier jour à venir
-qui n'a pas encore ses 4 posts** (vérifier avec getScheduledPosts), à **12:00, 15:00, 18:00 et 21:00 (Europe/Paris)**, en publication directe et publique.
+Objectif : chaque jour, monter **5 nouveaux clips** et les programmer sur TikTok via Metricool pour le **premier jour à venir
+qui n'a pas encore ses 5 posts** (vérifier avec getScheduledPosts), à **09:00, 12:00, 15:00, 18:00 et 21:00 (Europe/Paris)**, en publication directe et publique.
 
-## Chaînes Twitch (toutes)
-| Chaîne Twitch | Hashtag streamer | Hashtag communauté |
-|---|---|---|
-| ishowspeed | #ishowspeed | #twitch |
-| kaicenat | #kaicenat | #twitch |
-| aminematue | #amine | #twitchfr |
-| anyme023 | #anyme | #twitchfr |
-| squeezie | #squeezie | #twitchfr |
-| michou | #michou | #twitchfr |
-| domingo | #domingo | #twitchfr |
-| kamet0 | #kameto | #twitchfr |
+## Chaînes Twitch (classées par vues GTA 6, mesure du 22/11/2026)
+Américains : ishowspeed, kaicenat, xqc, caseoh_, jynxzi, lirik, hasanabi, summit1g
+Français : squeezie, anyme023, gotaga, michou, domingo, kamet0, zerator, aminematue
+(Neon streame sur Kick, inaccessible depuis l'environnement : ne pas l'utiliser.)
+Refaire le classement de temps en temps : somme des vues des clips `Grand Theft Auto VI` de la semaine par chaîne.
 
 ## Ordre de priorité
 1. **GTA 6 d'abord** : clips dont la catégorie (`categories` dans `yt-dlp -j`) est `Grand Theft Auto VI`.
 2. Quand il n'y a plus de bon clip GTA 6 non publié : les autres clips de ces chaînes (Just Chatting, autres jeux…).
-3. Varier : **2 clips maximum par chaîne et par jour**, et ne pas mettre la même chaîne à deux créneaux consécutifs.
+3. Varier : **2 clips maximum par chaîne et par jour**, mélanger américains et français, et ne pas mettre la même chaîne à deux créneaux consécutifs.
 4. Les clips en anglais (Speed, Kai Cenat) sont acceptés ; sous-titres en anglais, accroche en français.
 
 ## Règles anti-blocage TikTok (obligatoires)
 - **Jamais** : nudité / scène sexuelle (même dans le jeu), violence réelle, drogue, propos haineux, mineurs en danger. Dans le doute, écarter.
+- Si le jeu montre une scène suggestive (ou n'est pas intéressant) mais que la réaction vaut le coup : layout `camfocus` (webcam seule agrandie) sur tout le clip.
+- **IShowSpeed : toujours** `layouts: ["split", "camfocus"]` = les 3-5 premières secondes avec le jeu (si elles sont sûres), puis uniquement sa webcam ; ou `camfocus` partout.
 - Gros mots : toujours censurés dans les sous-titres (`fixes`, ex. f***, sh*t, p***) ; écarter un clip dont la vulgarité est le cœur.
 - Toujours un vrai montage (format vertical, bande, sous-titres, coupes, zooms) : jamais le clip brut.
 - Jamais deux fois le même clip (vérifier `posted.json`), jamais une vidéo déjà postée par un autre compte TikTok.
-- 4 posts par jour maximum, espacés de 3 h, toujours aux mêmes heures.
+- 5 posts par jour (9 h, 12 h, 15 h, 18 h, 21 h), toujours aux mêmes heures.
 - 5 hashtags maximum, pertinents ; pas de hashtags « follow4follow », « like4like » ou sans rapport.
 - `isAigc: false` (vidéo réelle montée), `commercialContent*` à false.
-- S'il y a moins de 4 bons clips, en programmer moins plutôt que des vidéos médiocres.
+- S'il y a moins de 5 bons clips, en programmer moins plutôt que des vidéos médiocres.
 
 ## 1. Préparer l'environnement (cloud)
 ```
@@ -69,9 +65,15 @@ Vérifier 3-4 images de chaque rendu (sous-titres lisibles, rien ne se superpose
 - Metricool `createScheduledPost` : blogId `8290985`, provider `tiktok`, `autoPublish: true`, timezone `Europe/Paris`,
   `tiktokData.title` obligatoire, `privacyOption: PUBLIC_TO_EVERYONE`.
 - Titre (`tiktokData.title`) : `ALLEZ VOIR DANS LA BIO` (toujours, demande du propriétaire du compte).
-- Texte (`text`) : `ALLEZ VOIR DANS LA BIO 🔗` puis 5 hashtags, dans cet ordre :
-  hashtag du streamer + hashtag du jeu + hashtag communauté + `#fyp #pourtoi` (voir le tableau des chaînes).
-  Hashtag du jeu : `#gta6` pour GTA VI, sinon le nom du jeu en un mot (ex. `#robrun`, `#fortnite`), ou `#humour` pour Just Chatting.
+- Texte (`text`) : `ALLEZ VOIR DANS LA BIO 🔗 #<streamer> #fyp #foryou #viral #pourtoi`
+  (hashtag du streamer : #ishowspeed, #kaicenat, #xqc, #caseoh, #jynxzi, #lirik, #hasanabi, #summit1g, #squeezie, #anyme, #gotaga,
+  #michou, #domingo, #kameto, #zerator, #amine). Pas de hashtag de jeu : demande du propriétaire.
+
+## Mises en page de render.py
+- `split` : webcam (`cam: [x,y,w,h]`) en haut, bande, jeu en bas (`game_x`).
+- `camfocus` : webcam `cam` agrandie au centre sur fond flou, bande dessous ; idéal quand la webcam est petite ou le jeu à cacher.
+- `cam` : source qui n'est que la webcam (`face_x`).
+- `layouts` : une mise en page par segment (ex. `["split","camfocus"]`).
 
 ## 6. Ménage
 Supprimer du dépôt les dossiers `tiktok/<date>/` de plus de 7 jours (Metricool garde sa propre copie dès la programmation).
