@@ -85,6 +85,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     if job.get("hook"):
         ev.append(f"Dialogue: 2,{ts(0)},{ts(3.2)},Hook,,0,0,0,,"
                   r"{\fad(0,250)\t(0,120,\fscx108\fscy108)\t(120,240,\fscx100\fscy100)}" + job["hook"])
+    caps = []  # [start_cs, end_cs, text] in centiseconds
     for ch in chunks(words):
         end_chunk = ch[-1]["e"] + 0.25
         for i, w in enumerate(ch):
@@ -98,8 +99,15 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                 else:
                     parts.append(t)
             pop = r"{\t(0,80,\fscx104\fscy104)\t(80,160,\fscx100\fscy100)}" if i == 0 else ""
-            ev.append(f"Dialogue: 1,{ts(st)},{ts(min(en, dur))},Cap,,0,0,0,,"
-                      + r"{\an5\pos(540," + str(sub_y) + ")}" + pop + " ".join(parts))
+            caps.append([round(st * 100), round(min(en, dur) * 100),
+                         r"{\an5\pos(540," + str(sub_y) + ")}" + pop + " ".join(parts)])
+    # Only one caption on screen at a time: each one ends exactly when the next begins.
+    caps.sort(key=lambda c: c[0])
+    for k in range(len(caps) - 1):
+        caps[k][1] = min(caps[k][1], caps[k + 1][0])
+    for s, e, text in caps:
+        if e > s:
+            ev.append(f"Dialogue: 1,{ts(s / 100)},{ts(e / 100)},Cap,,0,0,0,,{text}")
     return hdr + "\n".join(ev) + "\n"
 
 
