@@ -158,9 +158,12 @@ def layout_filter(job, layout, src, out, z):
         f.append(f"[{out}c1]crop={cw}:{ch}:{x}:{y},scale={W}:{CAM_H}:force_original_aspect_ratio=increase,"
                  f"scale=w='trunc({W}*{z}/2)*2':h='trunc({CAM_H}*{z}/2)*2':eval=frame,crop={W}:{CAM_H}[{out}cam]")
         gh = H - CAM_H - BAND_H
-        gw = round(1080 * W / gh)
+        # Keep only the top of the game image: the bottom ~150 px hold the game's own subtitles
+        # and the minimap, which would double our captions.
+        src_h = job.get("game_h", 1080)
+        gw = round(src_h * W / gh)
         gx = min(max(gx + (911 - gw) // 2, 0), 1920 - gw)
-        f.append(f"[{out}c2]crop={gw}:1080:{gx}:0,scale={W}:{gh},pad={W}:{H-CAM_H}:0:{BAND_H}[{out}game]")
+        f.append(f"[{out}c2]crop={gw}:{src_h}:{gx}:0,scale={W}:{gh},pad={W}:{H-CAM_H}:0:{BAND_H}[{out}game]")
         f.append(f"[{out}cam][{out}game]vstack[{out}]")
     elif layout == "camfocus":  # small webcam box enlarged, blurred copy as background
         x, y, cw, ch = job["cam"]

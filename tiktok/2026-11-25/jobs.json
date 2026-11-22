@@ -1,0 +1,221 @@
+{
+ "squeezie_affaires": {
+  "src": "multi/w/w17.mp4",
+  "out": "out/2026-11-25/squeezie_affaires.mp4",
+  "words": "multi/w/w17.words.json",
+  "segments": [
+   [
+    0.0,
+    16.92
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ]
+  ],
+  "cam": [
+   1522,
+   122,
+   396,
+   228
+  ],
+  "game_x": 504,
+  "hook": "SQUEEZIE NE S'OCCUPE PLUS DES AUTRES"
+ },
+ "caseoh_freinage": {
+  "src": "multi/w/w04.mp4",
+  "out": "out/2026-11-25/caseoh_freinage.mp4",
+  "words": "multi/w/w04.words.json",
+  "segments": [
+   [
+    0.0,
+    60.0
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ],
+   [
+    15.9,
+    18.2
+   ],
+   [
+    43.2,
+    45.5
+   ]
+  ],
+  "cam": [
+   2,
+   142,
+   396,
+   292
+  ],
+  "game_x": 560
+ },
+ "speed_fete": {
+  "src": "multi/v/s01.mp4",
+  "out": "out/2026-11-25/speed_fete.mp4",
+  "words": "multi/v/s01.words.json",
+  "segments": [
+   [
+    0.0,
+    25.73
+   ]
+  ],
+  "layout": "camfocus",
+  "cam": [
+   6,
+   464,
+   380,
+   228
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ],
+   [
+    15.88,
+    18.18
+   ]
+  ]
+ },
+ "domingo_requins": {
+  "src": "multi/w/w25.mp4",
+  "out": "out/2026-11-25/domingo_requins.mp4",
+  "words": "multi/w/w25.words.json",
+  "segments": [
+   [
+    0.0,
+    60.0
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    1.36,
+    3.66
+   ],
+   [
+    27.54,
+    29.84
+   ],
+   [
+    51.73,
+    54.03
+   ]
+  ],
+  "cam": [
+   1446,
+   142,
+   432,
+   272
+  ],
+  "game_x": 470,
+  "hook": "LES REQUINS N'ATTAQUENT PAS ?"
+ },
+ "anyme_physique": {
+  "src": "multi/w/w19.mp4",
+  "out": "out/2026-11-25/anyme_physique.mp4",
+  "words": "multi/w/w19.words.json",
+  "segments": [
+   [
+    0.0,
+    29.04
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    5.96,
+    8.26
+   ]
+  ],
+  "cam": [
+   0,
+   0,
+   424,
+   298
+  ],
+  "game_x": 560,
+  "hook": "ANYME CLASHE LA PHYSIQUE DE GTA 6"
+ }
+}
