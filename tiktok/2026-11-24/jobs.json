@@ -1,0 +1,128 @@
+[
+ {
+  "src": "multi/v/g04.mp4",
+  "words": "multi/v/g04.words.json",
+  "segments": [
+   [
+    0.0,
+    5.0
+   ],
+   [
+    12.5,
+    30.0
+   ]
+  ],
+  "layout": "split",
+  "cam": [
+   6,
+   464,
+   380,
+   228
+  ],
+  "game_x": 504,
+  "fixes": {
+   "fucking": "f***",
+   "shit": "sh*t"
+  },
+  "hook": "SPEED BRAQUE UN MAGASIN DANS GTA 6",
+  "zooms": [
+   [
+    0.0,
+    1.9
+   ],
+   [
+    9.8,
+    11.8
+   ],
+   [
+    21.4,
+    22.5
+   ]
+  ],
+  "out": "out/2026-11-24/speed_braquage.mp4"
+ },
+ {
+  "src": "multi/v/g09.mp4",
+  "words": "multi/v/g09.words.json",
+  "segments": [
+   [
+    33.0,
+    51.0
+   ]
+  ],
+  "layout": "split",
+  "cam": [
+   1525,
+   2,
+   393,
+   220
+  ],
+  "game_x": 504,
+  "drop_ranges": [
+   [
+    51.0,
+    60.0
+   ]
+  ],
+  "hook": "SQUEEZIE CHOQUÉ PAR LES GRAPHISMES",
+  "zooms": [
+   [
+    11.4,
+    13.6
+   ]
+  ],
+  "out": "out/2026-11-24/squeezie_graphismes.mp4"
+ },
+ {
+  "src": "multi/v/g10.mp4",
+  "words": "multi/v/g10.words.json",
+  "segments": [
+   [
+    3.0,
+    20.0
+   ]
+  ],
+  "layout": "split",
+  "cam": [
+   1432,
+   270,
+   486,
+   268
+  ],
+  "game_x": 504,
+  "hook": "IL RENVERSE UNE PASSANTE ET S'EXCUSE",
+  "zooms": [
+   [
+    10.8,
+    13.2
+   ]
+  ],
+  "out": "out/2026-11-24/anyme_morte.mp4"
+ },
+ {
+  "src": "multi/v/g08.mp4",
+  "words": "multi/v/g08.words.json",
+  "segments": [
+   [
+    1.5,
+    19.0
+   ]
+  ],
+  "layout": "split",
+  "cam": [
+   1452,
+   170,
+   422,
+   258
+  ],
+  "game_x": 470,
+  "hook": "LE TIR LE PLUS GOAT DE GTA 6",
+  "zooms": [
+   [
+    15.9,
+    17.5
+   ]
+  ],
+  "out": "out/2026-11-24/domingo_nba.mp4"
+ }
+]
