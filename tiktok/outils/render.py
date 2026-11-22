@@ -145,9 +145,10 @@ def main():
         cw = 608
         f.append(f"[cv]crop={cw}:1080:{fx - cw // 2}:0,scale={W}:{H},"
                  f"scale=w='trunc({W}*{z}/2)*2':h='trunc({H}*{z}/2)*2':eval=frame,crop={W}:{H}[st]")
-    f.append(f"[st]ass={assf},format=yuv420p[vo]")
+    badge = job.get("badge", "brand/badge.png")
+    f.append(f"[1:v]format=rgba,scale=iw*0.85:-1[bd];[st][bd]overlay=32:300:shortest=1,ass={assf},format=yuv420p[vo]")
     f.append("[ca]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[ao]")
-    cmd = ["ffmpeg", "-v", "error", "-y", "-i", job["src"], "-filter_complex", ";".join(f),
+    cmd = ["ffmpeg", "-v", "error", "-y", "-i", job["src"], "-loop", "1", "-i", badge, "-filter_complex", ";".join(f),
            "-map", "[vo]", "-map", "[ao]", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
            "-profile:v", "high", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", job["out"]]
     subprocess.run(cmd, check=True)
