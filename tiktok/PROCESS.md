@@ -12,7 +12,7 @@ Refaire le classement de temps en temps : somme des vues des clips `Grand Theft 
 ## Ordre de priorité
 1. **GTA 6 d'abord** : clips dont la catégorie (`categories` dans `yt-dlp -j`) est `Grand Theft Auto VI`.
 2. Quand il n'y a plus de bon clip GTA 6 non publié : les autres clips de ces chaînes (Just Chatting, autres jeux…).
-3. Varier : **2 clips maximum par chaîne et par jour**, mélanger américains et français, et ne pas mettre la même chaîne à deux créneaux consécutifs.
+3. **Répartition par jour (demande du propriétaire) : 3 streamers français + 1 IShowSpeed + 1 autre américain.** 2 clips maximum par chaîne et par jour., et ne pas mettre la même chaîne à deux créneaux consécutifs.
 4. Les clips en anglais sont acceptés ; sous-titres en anglais.
 5. **Accroche (`hook`) uniquement pour les streamers français.** Streamers non français : pas de champ `hook` du tout.
 6. Ignorer toute chaîne présente dans `tiktok/chaines_bloquees.json`.
@@ -20,7 +20,7 @@ Refaire le classement de temps en temps : somme des vues des clips `Grand Theft 
 ## Règles anti-blocage TikTok (obligatoires)
 - **Jamais** : nudité / scène sexuelle (même dans le jeu), violence réelle, drogue, propos haineux, mineurs en danger. Dans le doute, écarter.
 - Si le jeu montre une scène suggestive (ou n'est pas intéressant) mais que la réaction vaut le coup : layout `camfocus` (webcam seule agrandie) sur tout le clip.
-- **IShowSpeed : toujours** `layouts: ["split", "camfocus"]` = les 3-5 premières secondes avec le jeu (si elles sont sûres), puis uniquement sa webcam ; ou `camfocus` partout.
+- **IShowSpeed** : priorité du propriétaire. Si le jeu montre une scène osée mais que **le son** reste correct, garder le clip en `camfocus` sur toute la durée (on ne voit que sa webcam) ; écarter seulement si le son est explicite. Sinon, `layouts: ["split", "camfocus"]` = les 3-5 premières secondes avec le jeu (si elles sont sûres), puis uniquement sa webcam ; ou `camfocus` partout.
 - Gros mots : toujours censurés dans les sous-titres (`fixes`, ex. f***, sh*t, p***) ; écarter un clip dont la vulgarité est le cœur.
 - Toujours un vrai montage (format vertical, bande, sous-titres, coupes, zooms) : jamais le clip brut.
 - Jamais deux fois le même clip (vérifier `posted.json`), jamais une vidéo déjà postée par un autre compte TikTok.
