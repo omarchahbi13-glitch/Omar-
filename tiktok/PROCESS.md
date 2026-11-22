@@ -12,7 +12,7 @@ Refaire le classement de temps en temps : somme des vues des clips `Grand Theft 
 ## Ordre de priorité
 1. **GTA 6 d'abord** : clips dont la catégorie (`categories` dans `yt-dlp -j`) est `Grand Theft Auto VI`.
 2. Quand il n'y a plus de bon clip GTA 6 non publié : les autres clips de ces chaînes (Just Chatting, autres jeux…).
-3. **Répartition par jour (demande du propriétaire) : 3 streamers français + 1 IShowSpeed + 1 autre américain.** 2 clips maximum par chaîne et par jour., et ne pas mettre la même chaîne à deux créneaux consécutifs.
+3. **Répartition par jour (demande du propriétaire) : 3 streamers français + 1 IShowSpeed + 1 autre américain.** 2 clips maximum par chaîne et par jour, et ne pas mettre la même chaîne à deux créneaux consécutifs.
 4. Les clips en anglais sont acceptés ; sous-titres en anglais.
 5. **Accroche (`hook`) uniquement pour les streamers français.** Streamers non français : pas de champ `hook` du tout.
 6. Ignorer toute chaîne présente dans `tiktok/chaines_bloquees.json`.
