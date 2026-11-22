@@ -1,18 +1,36 @@
 # TikToks prêts à poster — clips de Kameto (twitch.tv/kamet0)
 
 Format : 1080×1920, 30 i/s, son normalisé à -14 LUFS. Sources : les clips Twitch les plus vus de la semaine.
+Les sous-titres sont automatiques : relisez-les avant de poster.
 
-| # | Fichier | Durée | Description à copier |
-|---|---------|-------|----------------------|
-| 1 | `1_plante.mp4` | 34 s | Il a tout perdu pour une petite plante 🌱💀 #kameto #gta6 #twitch #rp #karminecorp #clip #fyp |
-| 2 | `2_crabe.mp4` | 18 s | Se faire gank par un crabe 🦀😭 #kameto #twitch #horreur #jumpscare #clip #fyp |
-| 3 | `3_jumpscare.mp4` | 11 s | Il ne l'a pas vu venir 😳 #kameto #gta6 #twitch #jumpscare #clip #pourtoi |
-| 4 | `4_sourire.mp4` | 10 s | Il cache rien du tout… 😏🍫 #kameto #twitch #karminecorp #stream #clip #fyp |
+## Textes à copier-coller (description + hashtags)
 
-Conseils de publication :
-- Postez 1 vidéo par jour, entre 18 h et 21 h (heure française), en commençant par la n°1 (la plus forte).
-- Gardez la musique d'origine. Si vous ajoutez un son tendance de TikTok, mettez-le à 5-10 % du volume.
-- Les sous-titres sont générés automatiquement : relisez-les avant de poster.
-- Les vidéos viennent de la chaîne de Kameto : vérifiez qu'il autorise les comptes de clips.
+**Jour 1 — `1_plante.mp4`**
+```
+Il a tout perdu… pour une PETITE PLANTE 🌱💀 Vous auriez fait quoi à sa place ? 😭 #kameto #gta6 #gtarp #twitchfr #pourtoi
+```
 
-`outils/render.py` + `outils/jobs.json` : le script de montage (découpe, mise en page caméra/jeu, sous-titres animés, zooms).
+**Jour 2 — `2_crabe.mp4`**
+```
+Se faire gank par un crabe 🦀 la honte éternelle 😭 #kameto #jeudhorreur #jumpscare #twitchfr #pourtoi
+```
+
+**Jour 3 — `3_jumpscare.mp4`**
+```
+Il l'a PAS vu venir 😳 regarde jusqu'au bout #kameto #gta6 #jumpscare #twitchfr #pourtoi
+```
+
+**Jour 4 — `4_sourire.mp4`**
+```
+« Je souris pas les gars » 😏🍫 #kameto #karminecorp #kcorp #twitchfr #pourtoi
+```
+
+## Règles pour gagner des abonnés
+- 3 à 5 hashtags maximum : 1 large (#pourtoi), 2-3 de niche (#kameto, #karminecorp, #gta6…), 1 de communauté (#twitchfr).
+- Une question dans la description pour pousser aux commentaires.
+- Une vidéo par jour, entre 18 h et 21 h, et répondre aux commentaires pendant la première heure.
+- Un nom de compte clair (ex. « Kameto Clips FR ») et une bio qui promet « les meilleurs moments de Kameto chaque jour ».
+- Épinglez la meilleure vidéo (la n°1) en haut du profil.
+- Vérifiez que Kameto autorise les comptes de clips.
+
+`outils/render.py` + `outils/jobs.json` : le script de montage.
