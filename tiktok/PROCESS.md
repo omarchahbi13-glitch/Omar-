@@ -59,8 +59,8 @@ Le modèle Whisper se télécharge depuis Hugging Face : lancer avec `HF_HUB_DIS
   - la **webcam** de Kameto (rectangle `cam: [x,y,w,h]` en 1920×1080 ; souvent en haut à droite vers `[1520,180,396,216]` ou `[1528,172,388,226]`),
   - l'action du jeu (`game_x`, bord gauche d'une découpe ~950 px de large),
   - ou, si l'image n'est que la webcam, `layout: "cam"` avec `face_x` (centre du visage).
-- Choisir les **segments** (couper les blancs > 1,5 s, commencer sur l'action, 10 à 45 s au total),
-  une **accroche** (≤ 40 caractères, majuscules) et les **zooms** (temps de sortie) sur les réactions.
+- **Ne pas couper les silences** (demande du propriétaire) : garder le clip entier, `segments: [[0, durée]]` (60 s max).
+  Choisir une **accroche** (≤ 40 caractères, majuscules, streamers français uniquement) et les **zooms** sur les réactions.
 - Sous-titres : supprimer (`drop_ranges`) les phrases mal transcrites plutôt que d'inventer ; censurer les insultes
   (`fixes`, ex. `{"pute":"p***"}`).
 
