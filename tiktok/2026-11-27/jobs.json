@@ -1,0 +1,218 @@
+{
+ "anyme_cinematiques": {
+  "src": "multi/w/w24.mp4",
+  "out": "out/2026-11-27/anyme_cinematiques.mp4",
+  "words": "multi/w/w24.words.json",
+  "segments": [
+   [
+    0.0,
+    30.01
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    0,
+    2.28
+   ],
+   [
+    10.9,
+    13.2
+   ],
+   [
+    22.58,
+    24.88
+   ]
+  ],
+  "cam": [
+   0,
+   0,
+   424,
+   298
+  ],
+  "game_x": 560,
+  "hook": "ANYME BLUFFÉ PAR LES CINÉMATIQUES"
+ },
+ "speed_club": {
+  "src": "multi/w/w03.mp4",
+  "out": "out/2026-11-27/speed_club.mp4",
+  "words": "multi/w/w03.words.json",
+  "segments": [
+   [
+    0.0,
+    30.02
+   ]
+  ],
+  "layout": "camfocus",
+  "cam": [
+   6,
+   464,
+   380,
+   228
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ]
+  ]
+ },
+ "zerator_bug": {
+  "src": "multi/w/w26.mp4",
+  "out": "out/2026-11-27/zerator_bug.mp4",
+  "words": "multi/w/w26.words.json",
+  "segments": [
+   [
+    0.0,
+    15.85
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    2.28,
+    4.58
+   ],
+   [
+    12.85,
+    15.15
+   ]
+  ],
+  "cam": [
+   1472,
+   538,
+   430,
+   324
+  ],
+  "game_x": 470,
+  "hook": "LE PREMIER BUG DE GTA 6"
+ },
+ "gotaga_copine": {
+  "src": "multi/w/w32.mp4",
+  "out": "out/2026-11-27/gotaga_copine.mp4",
+  "words": "multi/w/w32.words.json",
+  "segments": [
+   [
+    0.0,
+    22.17
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    1.49,
+    3.79
+   ]
+  ],
+  "cam": [
+   1498,
+   126,
+   414,
+   236
+  ],
+  "game_x": 470,
+  "hook": "SA COPINE CROIT QU'IL LA TROMPE DANS GTA"
+ },
+ "squeezie_reseaux": {
+  "src": "multi/w/w23.mp4",
+  "out": "out/2026-11-27/squeezie_reseaux.mp4",
+  "words": "multi/w/w23.words.json",
+  "segments": [
+   [
+    0.0,
+    30.0
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    9.48,
+    11.78
+   ],
+   [
+    16.83,
+    19.13
+   ]
+  ],
+  "cam": [
+   2,
+   2,
+   396,
+   222
+  ],
+  "game_x": 504,
+  "hook": "LES RÉSEAUX SOCIAUX DE GTA 6"
+ }
+}

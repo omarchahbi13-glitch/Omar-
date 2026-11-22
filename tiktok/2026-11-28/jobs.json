@@ -1,0 +1,230 @@
+{
+ "kai_premiere_mission": {
+  "src": "multi/w/x02.mp4",
+  "out": "out/2026-11-28/kai_premiere_mission.mp4",
+  "words": "multi/w/x02.words.json",
+  "segments": [
+   [
+    0.0,
+    60.0
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ]
+  ],
+  "cam": [
+   0,
+   690,
+   400,
+   390
+  ],
+  "game_x": 560
+ },
+ "domingo_lucia": {
+  "src": "multi/w/w29.mp4",
+  "out": "out/2026-11-28/domingo_lucia.mp4",
+  "words": "multi/w/w29.words.json",
+  "segments": [
+   [
+    0.0,
+    48.89
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ],
+   [
+    9.42,
+    11.72
+   ],
+   [
+    14.36,
+    16.66
+   ]
+  ],
+  "cam": [
+   1446,
+   142,
+   432,
+   272
+  ],
+  "game_x": 470,
+  "hook": "DOMINGO RENCONTRE LUCIA"
+ },
+ "caseoh_kyle": {
+  "src": "multi/w/w09.mp4",
+  "out": "out/2026-11-28/caseoh_kyle.mp4",
+  "words": "multi/w/w09.words.json",
+  "segments": [
+   [
+    0.0,
+    60.0
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    0.4,
+    2.7
+   ],
+   [
+    9.1,
+    11.4
+   ],
+   [
+    15.28,
+    17.58
+   ]
+  ],
+  "cam": [
+   2,
+   140,
+   396,
+   292
+  ],
+  "game_x": 560
+ },
+ "speed_appel": {
+  "src": "multi/w/w16.mp4",
+  "out": "out/2026-11-28/speed_appel.mp4",
+  "words": "multi/w/w16.words.json",
+  "segments": [
+   [
+    0.0,
+    60.0
+   ]
+  ],
+  "layout": "camfocus",
+  "cam": [
+   6,
+   464,
+   380,
+   228
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ],
+   [
+    36.62,
+    38.92
+   ],
+   [
+    42.0,
+    44.3
+   ]
+  ]
+ },
+ "gotaga_course": {
+  "src": "multi/w/z04.mp4",
+  "out": "out/2026-11-28/gotaga_course.mp4",
+  "words": "multi/w/z04.words.json",
+  "segments": [
+   [
+    0.0,
+    21.27
+   ]
+  ],
+  "layout": "split",
+  "cam": [
+   1498,
+   126,
+   414,
+   234
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    3.98,
+    6.28
+   ],
+   [
+    15.2,
+    17.5
+   ]
+  ],
+  "game_x": 470,
+  "hook": "GOTAGA RATE LA VICTOIRE DE PEU"
+ }
+}

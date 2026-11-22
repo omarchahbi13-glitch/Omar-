@@ -1,0 +1,226 @@
+{
+ "speed_matin": {
+  "src": "multi/w/z02.mp4",
+  "out": "out/2026-11-26/speed_matin.mp4",
+  "words": "multi/w/z02.words.json",
+  "segments": [
+   [
+    0.0,
+    13.29
+   ]
+  ],
+  "layout": "split",
+  "cam": [
+   6,
+   464,
+   380,
+   228
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ]
+  ],
+  "game_x": 560
+ },
+ "gotaga_panique": {
+  "src": "multi/w/w18.mp4",
+  "out": "out/2026-11-26/gotaga_panique.mp4",
+  "words": "multi/w/w18.words.json",
+  "segments": [
+   [
+    0.0,
+    25.95
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    7.8,
+    10.1
+   ],
+   [
+    11.84,
+    14.14
+   ]
+  ],
+  "cam": [
+   22,
+   10,
+   416,
+   230
+  ],
+  "game_x": 560,
+  "hook": "GOTAGA PANIQUE EN PLEINE MISSION"
+ },
+ "xqc_poursuite": {
+  "src": "multi/w/w15.mp4",
+  "out": "out/2026-11-26/xqc_poursuite.mp4",
+  "words": "multi/w/w15.words.json",
+  "segments": [
+   [
+    0.0,
+    60.0
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    3.02,
+    5.32
+   ],
+   [
+    12.36,
+    14.66
+   ],
+   [
+    17.35,
+    19.65
+   ]
+  ],
+  "cam": [
+   2,
+   2,
+   366,
+   290
+  ],
+  "game_x": 540
+ },
+ "michou_carte": {
+  "src": "multi/w/w20.mp4",
+  "out": "out/2026-11-26/michou_carte.mp4",
+  "words": "multi/w/w20.words.json",
+  "segments": [
+   [
+    0.0,
+    60.0
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ],
+   [
+    6.87,
+    9.17
+   ],
+   [
+    14.57,
+    16.87
+   ]
+  ],
+  "cam": [
+   4,
+   416,
+   452,
+   248
+  ],
+  "game_x": 640,
+  "hook": "MICHOU DÉCOUVRE LA CARTE DE GTA 6"
+ },
+ "speed_danse": {
+  "src": "multi/v/s03.mp4",
+  "out": "out/2026-11-26/speed_danse.mp4",
+  "words": "multi/v/s03.words.json",
+  "segments": [
+   [
+    0.0,
+    30.02
+   ]
+  ],
+  "layout": "camfocus",
+  "cam": [
+   6,
+   464,
+   380,
+   228
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    1.36,
+    3.66
+   ],
+   [
+    24.02,
+    26.32
+   ]
+  ]
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "gotaga_poubelle": {
+  "src": "multi/w/z05.mp4",
+  "out": "out/2026-11-29/gotaga_poubelle.mp4",
+  "words": "multi/w/z05.words.json",
+  "segments": [
+   [
+    0.0,
+    28.45
+   ]
+  ],
+  "layout": "split",
+  "cam": [
+   1492,
+   392,
+   412,
+   230
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ],
+   [
+    14.4,
+    16.7
+   ],
+   [
+    24.82,
+    27.12
+   ]
+  ],
+  "game_x": 470,
+  "hook": "GOTAGA SE TROMPE DE RÉPONSE"
+ },
+ "speed_9ziba": {
+  "src": "multi/w/z01.mp4",
+  "out": "out/2026-11-29/speed_9ziba.mp4",
+  "words": "multi/w/z01.words.json",
+  "segments": [
+   [
+    0.0,
+    12.67
+   ]
+  ],
+  "layout": "camfocus",
+  "cam": [
+   6,
+   464,
+   380,
+   228
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    2.72,
+    5.02
+   ]
+  ]
+ },
+ "squeezie_bateau": {
+  "src": "multi/v/g05.mp4",
+  "out": "out/2026-11-29/squeezie_bateau.mp4",
+  "words": "multi/v/g05.words.json",
+  "segments": [
+   [
+    0.0,
+    20.07
+   ]
+  ],
+  "layout": "split",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ]
+  ],
+  "cam": [
+   1525,
+   2,
+   393,
+   220
+  ],
+  "game_x": 504,
+  "hook": "SQUEEZIE EN MODE CAPITAINE"
+ },
+ "xqc_avis": {
+  "src": "multi/w/w01.mp4",
+  "out": "out/2026-11-29/xqc_avis.mp4",
+  "words": "multi/w/w01.words.json",
+  "segments": [
+   [
+    0.0,
+    33.69
+   ]
+  ],
+  "layout": "camfocus",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ]
+  ],
+  "cam": [
+   0,
+   0,
+   396,
+   312
+  ]
+ },
+ "anyme_plombs": {
+  "src": "multi/v/g06.mp4",
+  "out": "out/2026-11-29/anyme_plombs.mp4",
+  "words": "multi/v/g06.words.json",
+  "segments": [
+   [
+    0.0,
+    30.0
+   ]
+  ],
+  "layout": "cam",
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***"
+  },
+  "zooms": [
+   [
+    0,
+    2.2
+   ],
+   [
+    29.36,
+    31.66
+   ]
+  ],
+  "face_x": 430,
+  "hook": "ANYME VA PÉTER LES PLOMBS"
+ }
+}
