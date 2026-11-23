@@ -1,0 +1,181 @@
+{
+ "speed_wchat": {
+  "src": "d30/m01.mp4",
+  "layout": "camfocus",
+  "cam": [
+   4,
+   462,
+   384,
+   236
+  ],
+  "out": "out/2026-11-30/speed_wchat.mp4",
+  "words": "d30/m01.words.json",
+  "segments": [
+   [
+    0.0,
+    49.35
+   ]
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    13.93,
+    16.23
+   ],
+   [
+    38.21,
+    40.51
+   ]
+  ]
+ },
+ "gotaga_bebe": {
+  "src": "d30/m04.mp4",
+  "layout": "split",
+  "cam": [
+   1498,
+   126,
+   414,
+   232
+  ],
+  "game_x": 470,
+  "hook": "GOTAGA BABYSITTER DANS GTA 6",
+  "out": "out/2026-11-30/gotaga_bebe.mp4",
+  "words": "d30/m04.words.json",
+  "segments": [
+   [
+    0.0,
+    60.0
+   ]
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    5.32,
+    7.62
+   ]
+  ]
+ },
+ "speed_cover": {
+  "src": "d30/m02.mp4",
+  "layout": "camfocus",
+  "cam": [
+   4,
+   462,
+   384,
+   236
+  ],
+  "out": "out/2026-11-30/speed_cover.mp4",
+  "words": "d30/m02.words.json",
+  "segments": [
+   [
+    0.0,
+    17.86
+   ]
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    0,
+    2.25
+   ],
+   [
+    13.52,
+    15.82
+   ]
+  ]
+ },
+ "anyme_cadeau": {
+  "src": "d30/m05.mp4",
+  "layout": "camfocus",
+  "cam": [
+   500,
+   300,
+   1400,
+   780
+  ],
+  "hook": "ANYME FAIT UN CADEAU À UN VIEWER",
+  "out": "out/2026-11-30/anyme_cadeau.mp4",
+  "words": "d30/m05.words.json",
+  "segments": [
+   [
+    0.0,
+    60
+   ]
+  ],
+  "fixes": {
+   "fucking": "f***",
+   "fuck": "f***",
+   "fucked": "f***ed",
+   "shit": "sh*t",
+   "bullshit": "bullsh*t",
+   "couilles": "c*******",
+   "enculer": "e******",
+   "bitch": "b****",
+   "nigga": "n****",
+   "pute": "p***",
+   "ass": "a**",
+   "dick": "d***",
+   "motherfucking": "motherf***ing",
+   "motherfuckin": "motherf***in"
+  },
+  "zooms": [
+   [
+    0.17,
+    2.47
+   ],
+   [
+    14.34,
+    16.64
+   ],
+   [
+    30.95,
+    33.25
+   ]
+  ]
+ }
+}
