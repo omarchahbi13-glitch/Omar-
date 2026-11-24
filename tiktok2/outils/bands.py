@@ -1,4 +1,4 @@
-"""Bande 1080x64 du 2e compte : DO (bleu) BRAZILLL (noir) [CLIPS YT] (cartouche vert incliné) + petit bouton ABONNE-TOI.
+"""Bande 1080x64 du 2e compte : DO (bleu) BRAZILLL (noir) [CLIPS] (cartouche vert incliné) + bouton ABONNE-TOI.
 DO et BRAZILLL sont découpés dans brand/logo.png ; le cartouche est redessiné en police Bungee (celle du logo)."""
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
@@ -35,7 +35,7 @@ def bouton(text, h, s=4):
 DO = crop(850, 600, 1320, 940); BRA = crop(200, 940, 1960, 1200)
 b = Image.new("RGBA", (W, BH), YEL + (255,)); d = ImageDraw.Draw(b)
 d.rectangle((0, 0, W, 3), fill=BLK); d.rectangle((0, BH - 4, W, BH), fill=BLK)
-parts = [fit(DO, 30).convert("RGBA"), fit(BRA, 36).convert("RGBA"), cartouche("CLIPS YT", 34), bouton("ABONNE-TOI", 30)]
+parts = [fit(DO, 30).convert("RGBA"), fit(BRA, 36).convert("RGBA"), cartouche("CLIPS", 34), bouton("ABONNE-TOI", 44)]
 gaps = [14, 18, 26]; tot = sum(p.width for p in parts) + sum(gaps); x = (W - tot) // 2
 for i, p in enumerate(parts):
     b.alpha_composite(p, (x, (BH - p.height) // 2)); x += p.width + (gaps[i] if i < len(gaps) else 0)
