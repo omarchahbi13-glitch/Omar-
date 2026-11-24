@@ -15,6 +15,8 @@ EMOJI = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 def is_emoji(ch): return ord(ch) >= 0x2600
 
 def title_png(lines, path, size=66, top_space=640):
+    while size > 40 and max(ImageFont.truetype(FONT, size).getlength(l) for l in lines) > W - 160:
+        size -= 2  # le titre doit tenir dans la largeur avec une marge
     f = ImageFont.truetype(FONT, size); fe = ImageFont.truetype(EMOJI, 109)
     def emoji_img(ch):
         im = Image.new("RGBA", (136, 128), (0, 0, 0, 0))
