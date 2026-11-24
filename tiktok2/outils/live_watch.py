@@ -104,7 +104,7 @@ while True:
                         done.add(b); last_peak = b
                         print("pic", b, n, h, med, flush=True)
         for e, p in segs():
-            if now - e > 1500:
+            if now - e > 2700:
                 os.remove(p)
                 if os.path.exists(p + '.map'): os.remove(p + '.map')
     except Exception as ex:
