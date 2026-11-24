@@ -94,7 +94,7 @@ while True:
             for b in keys[-6:-1]:  # fenêtres complètes récentes
                 n, h = bins[b]
                 if b in done or b - last_peak < 120: continue
-                if (n >= max(2.5 * med, med + 12)) or (h >= 8 and h >= 0.5 * n):
+                if (n >= max(3 * med, med + 30)) or (h >= 25 and h >= 0.5 * n):
                     dst = os.path.join(out, f"cand_{b}.mp4")
                     if now - b < 25: continue  # attendre que la vidéo suive
                     if cut(b - 40, b + 15, dst):
