@@ -67,7 +67,7 @@ def audio_peaks():
     med = statistics.median(loud.values()); ks = sorted(loud); res = []
     for t in ks[-60:]:
         w = [loud.get(t + i, 0) for i in range(6)]
-        if sum(v > med + 10 for v in w) >= 3: res.append((t, med))
+        if sum(v > med + 14 for v in w) >= 4: res.append((t, med))
     return res
 while True:
     try:
