@@ -20,7 +20,8 @@ Refaire le classement de temps en temps : somme des vues des clips `Grand Theft 
 ## Règles anti-blocage TikTok (obligatoires)
 - **Jamais** : nudité / scène sexuelle (même dans le jeu), violence réelle, drogue, propos haineux, mineurs en danger. Dans le doute, écarter.
 - Si le jeu montre une scène suggestive (ou n'est pas intéressant) mais que la réaction vaut le coup : layout `camfocus` (webcam seule agrandie) sur tout le clip.
-- **IShowSpeed** : montage normal (`split`, webcam + jeu) par défaut, clip en entier. **Uniquement** si le clip montre du sexuel ou de la nudité : `camfocus` (webcam seule) sur toute la durée. Écarter si le son lui-même est explicite.
+- **Webcam seule (`camfocus`) : NE PLUS L'UTILISER** (refusé par le propriétaire le 24/11). Un clip qui ne peut pas être monté normalement (scène sexuelle / nudité visible dans le jeu) est écarté.
+- **IShowSpeed** : montage normal (`split`, webcam + jeu) par défaut, clip en entier. Si le jeu montre du sexuel ou de la nudité : écarter le clip.
 - Gros mots : toujours censurés dans les sous-titres (`fixes`, ex. f***, sh*t, p***) ; écarter un clip dont la vulgarité est le cœur.
 - Toujours un vrai montage (format vertical, bande, sous-titres, coupes, zooms) : jamais le clip brut.
 - Jamais deux fois le même clip (vérifier `posted.json`), jamais une vidéo déjà postée par un autre compte TikTok.
