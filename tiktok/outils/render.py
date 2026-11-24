@@ -8,9 +8,9 @@ job = {src, out, words, segments:[[s,e],...], layout:"split"|"cam"|"camfocus", l
 import json, re, subprocess, sys
 
 W, H = 1080, 1920
-CAM_H = 640
-BAND = "brand/band.png"
-BAND_H = 64
+CAM_H = 760
+BAND = "brand/band_big.png"
+BAND_H = 92
 FONT = "Inter Display Black"
 
 

@@ -32,11 +32,11 @@ def avatar(size):
     out.paste(av, (4, 4), mk); return out
 FONT = os.popen("fc-match -f '%{file}' 'Inter Display:style=Black'").read()
 
-def band_A(BH=64):  # Néon : logo complet en ligne + filets verts lumineux (version fine)
+def band_A(BH=64, scale=1.0):  # Néon : logo complet en ligne + filets verts lumineux (version fine)
     b = Image.new("RGBA", (W, BH), BG + (255,))
-    glow_line(b, 2, GRN, t=2); glow_line(b, BH - 3, GRN, t=2)
-    parts = [fit(DO, 32), fit(BRA, 32), fit(CLIPS, 24)]
-    gap = 16; tot = sum(p.width for p in parts) + gap * 2; x = (W - tot) // 2
+    t=max(2,round(2*scale)); glow_line(b, 2, GRN, t=t); glow_line(b, BH - 3, GRN, t=t)
+    parts = [fit(DO, round(32*scale)), fit(BRA, round(32*scale)), fit(CLIPS, round(24*scale))]
+    gap = round(16*scale); tot = sum(p.width for p in parts) + gap * 2; x = (W - tot) // 2
     for p in parts:
         b.paste(p, (x, (BH - p.height) // 2)); x += p.width + gap
     return b

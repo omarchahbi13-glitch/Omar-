@@ -85,6 +85,7 @@ Vérifier 3-4 images de chaque rendu (sous-titres lisibles, rien ne se superpose
     #michou, #domingo, #kameto, #zerator, #amine.
 
 ## Mises en page de render.py
+- Format depuis le 24/11 (demande du propriétaire) : webcam plus grande (`CAM_H = 760`) et bande plus épaisse (`brand/band_big.png`, 92 px).
 - `split` : webcam (`cam: [x,y,w,h]`) en haut, bande, jeu en bas (`game_x`).
 - `camfocus` : webcam `cam` agrandie au centre sur fond flou, bande dessous ; idéal quand la webcam est petite ou le jeu à cacher.
 - `cam` : source qui n'est que la webcam (`face_x`).
