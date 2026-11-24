@@ -21,33 +21,46 @@ def segs():
         e, n = l.split(); p = os.path.join(live, n)
         if os.path.exists(p): r.append((int(e), p))
     return sorted(r)
+def file_map(p):
+    m = []
+    if os.path.exists(p + ".map"):
+        for l in open(p + ".map"):
+            o, t = l.split(); m.append((float(o), float(t)))
+    return m
 def cut(t0, t1, dst):
-    parts = [(e, p) for e, p in segs() if e <= t1 and e + 330 >= t0]
-    if not parts: return False
-    tmp = []
-    for k, (e, p) in enumerate(parts):
-        q = dst + f".p{k}.mp4"
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", p, "-c", "copy", "-avoid_negative_ts", "make_zero", q])
-        tmp.append((e, q))
-    lst = dst + ".txt"
-    open(lst, "w").write("".join(f"file '{os.path.abspath(q)}'\n" for _, q in tmp))
-    joined = dst + ".join.mp4"
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", joined])
-    ss = max(t0 - tmp[0][0], 0)
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{ss:.2f}", "-i", joined, "-t", f"{t1 - t0:.2f}",
-                    "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-c:a", "aac", "-b:a", "192k", dst])
-    for _, q in tmp: os.remove(q)
-    os.remove(lst); os.remove(joined)
-    return os.path.exists(dst)
+    """Découpe [t0, t1] (heure de diffusion) grâce aux .map ; un morceau par fichier, puis assemblage."""
+    pieces = []
+    for e, p in segs():
+        m = file_map(p)
+        inside = [o for o, t in m if t0 <= t <= t1]
+        if not inside: continue
+        a, b = min(inside), max(inside) + 2.0
+        q = dst + f".p{len(pieces)}.mp4"
+        tmp = dst + ".remux.mp4"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", p, "-c", "copy", "-avoid_negative_ts", "make_zero", tmp])
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{a:.2f}", "-i", tmp, "-t", f"{b - a:.2f}",
+                        "-vf", "fps=30", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-c:a", "aac", "-ar", "48000", "-b:a", "192k", q])
+        os.remove(tmp)
+        if os.path.exists(q): pieces.append(q)
+    if not pieces: return False
+    if len(pieces) == 1: os.replace(pieces[0], dst)
+    else:
+        lst = dst + ".txt"; open(lst, "w").write("".join(f"file '{os.path.abspath(q)}'\n" for q in pieces))
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", dst])
+        for q in pieces: os.remove(q)
+        os.remove(lst)
+    return os.path.exists(dst) and os.path.getsize(dst) > 100000
 loud = {}  # epoch (s) -> dB
 def update_loudness():
     for e, p in segs()[-2:]:
         raw = subprocess.run(["ffmpeg", "-v", "quiet", "-i", p, "-vn", "-ac", "1", "-ar", "8000", "-f", "s16le", "-"],
                              capture_output=True).stdout
         a = np.frombuffer(raw, np.int16).astype(np.float32)
+        m = file_map(p)
         for k in range(len(a) // 8000):
             x = a[k * 8000:(k + 1) * 8000]
-            loud[e + k] = 20 * math.log10(float(np.sqrt((x * x).mean())) + 1)
+            t = next((tt + (k - o) for o, tt in reversed(m) if o <= k), e + k) if m else e + k
+            loud[int(t)] = 20 * math.log10(float(np.sqrt((x * x).mean())) + 1)
     for t in [t for t in loud if t < time.time() - 900]: del loud[t]
 def audio_peaks():
     if len(loud) < 300: return []
@@ -91,7 +104,9 @@ while True:
                         done.add(b); last_peak = b
                         print("pic", b, n, h, med, flush=True)
         for e, p in segs():
-            if now - e > 1500: os.remove(p)
+            if now - e > 1500:
+                os.remove(p)
+                if os.path.exists(p + '.map'): os.remove(p + '.map')
     except Exception as ex:
         print("erreur", ex, flush=True)
     time.sleep(20)

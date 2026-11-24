@@ -1,4 +1,5 @@
-"""Enregistre un live Twitch (sans pubs) en morceaux de 5 min + horodatage.
+"""seg_<epoch>.mp4.map : « décalage_dans_le_fichier<TAB>heure_de_diffusion » pour chaque morceau (pubs exclues).
+Enregistre un live Twitch (sans pubs) en morceaux de 5 min + horodatage.
 Usage : python3 live_record.py <chaine> <dossier>
 Écrit <dossier>/seg_<epoch>.mp4 (un fichier par tranche de 5 min) et <dossier>/index.tsv (epoch_debut, fichier, durée).
 Python pur (requests passe par le proxy ; ffmpeg ne sait pas le faire).
@@ -31,7 +32,11 @@ while True:
             if l.startswith("#EXT-X-MAP:"):
                 u = l.split('URI="')[1].split('"')[0]
                 if u != init_url: init_url, init_data = u, S.get(u, timeout=20).content
+        pdt = None
         for i, l in enumerate(lines):
+            if l.startswith("#EXT-X-PROGRAM-DATE-TIME:"):
+                from datetime import datetime
+                pdt = datetime.fromisoformat(l.split(":", 1)[1].strip().replace("Z", "+00:00")).timestamp()
             if l.startswith("#EXTINF") and i + 1 < len(lines):
                 seg = lines[i + 1]
                 if seg in seen: continue
@@ -43,8 +48,10 @@ while True:
                     if cur: cur.close()
                     cur_start = now; name = f"seg_{int(now)}.mp4"
                     cur = open(os.path.join(out, name), "ab"); cur.write(init_data)
+                    mapf = open(os.path.join(out, name + ".map"), "a"); cur_off = 0.0
                     idx.write(f"{int(now)}\t{name}\n"); idx.flush()
                 cur.write(S.get(seg, timeout=20).content); cur.flush()
+                mapf.write(f"{cur_off:.3f}\t{(pdt if pdt else now):.3f}\n"); mapf.flush(); cur_off += dur
         if len(seen) > 5000: seen = set(list(seen)[-500:])
         time.sleep(2)
     except Exception as e:
