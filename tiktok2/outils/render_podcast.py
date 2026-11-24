@@ -1,7 +1,7 @@
 """Montage « présentation podcast » (vidéo 16:9 au centre, fond flou, gros titre en cartouches blancs en haut).
 Usage : python3 outils/render_podcast.py job.json   (lancer depuis tiktok2/)
 job = {src, out, words, segments:[[s,e]], title:"LIGNE 1|LIGNE 2|...", zooms:[[s,e]] (temps de sortie),
-       fixes:{}, drop_ranges:[], vid_y:640}
+       fixes:{}, drop_ranges:[], vid_y:640, title_dur:5 (optionnel : le titre disparaît après N s, en fondu)}
 """
 import json, os, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont
@@ -66,7 +66,8 @@ def main():
          f"[b]scale={W}:{vh},scale=w='trunc({W}*{z}/2)*2':h='trunc({vh}*{z}/2)*2':eval=frame,crop={W}:{vh}[fg]",
          f"[bg][fg]overlay=0:{vid_y}[v1]",
          f"[v1][1:v]overlay=0:{vid_y + vh}[v2]",
-         f"[v2][2:v]overlay=0:0,ass={assf},format=yuv420p[vo]",
+         (f"[2:v]format=rgba,fade=t=out:st={job['title_dur'] - 0.3}:d=0.3:alpha=1[tt]" if job.get("title_dur") else "[2:v]null[tt]"),
+         f"[v2][tt]overlay=0:0:shortest=1,ass={assf},format=yuv420p[vo]",
          "[ra]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[ao]"]
     cmd = ["ffmpeg", "-v", "error", "-y", "-i", job["src"], "-loop", "1", "-i", R.BAND, "-loop", "1", "-i", tpng,
            "-filter_complex", ";".join(f), "-map", "[vo]", "-map", "[ao]", "-t", f"{dur:.3f}",
