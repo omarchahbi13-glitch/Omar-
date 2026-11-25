@@ -10,3 +10,8 @@ Comptes de clips étudiés : @lesclips2you, @clip2twitchdeyouu (+ exemples envoy
 - Durée : **45 à 80 s** (souvent 60-75 s), une seule histoire complète avec la chute.
 - Titre : une phrase qui résume l'histoire, nom du streamer au début (« You est prêt à… »), 🤣.
 - Hashtags : #you #youladecadd + sujet (#messi, #mariage…) + #fyp.
+
+## Retours du propriétaire (25/11/2026)
+- « C'est la chaise » : validé, titre choisi « YOU SE CH*E DESSUS DEVANT LES MEUFS » (titre cash, nom du streamer, situation gênante).
+- « Son ex a réservé un voyage sur son compte Booking » (appel de viewer + conseils) : jugé nul (« éclaté au sol »).
+  → Éviter les appels de viewers et les débats de conseils ; privilégier les moments visuels et gênants entre les streamers.
