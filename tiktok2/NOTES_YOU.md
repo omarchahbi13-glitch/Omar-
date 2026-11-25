@@ -28,3 +28,15 @@ Comptes de clips étudiés : @lesclips2you, @clip2twitchdeyouu (+ exemples envoy
 - Contenu : **compilation des pires réponses**, enchaînées très vite (question → réponse absurde → réaction → suivante) :
   Tesla, périphérique, capitale du Kazakhstan (« Moustapha ? »), crise de 1929 (« pitié »), 3 présidents US…
 - Leçon : pour ce genre de vidéo, **un best-of rythmé de 8-10 moments courts** fait bien plus de vues qu'un seul passage long.
+
+## Étude de 20 TikToks envoyés par le propriétaire (25/11/2026) — 150 k à 1,6 M vues
+Types de moments qui cartonnent (contenu seulement) :
+1. **Quelqu'un « lâche » un bruit / accuse le micro ou la chaise** (« en plus avec le micro » 1,6 M ; « quelqu'un a chié dans le micro » 518 k ;
+   « la vie de ma mère j'ai rien à voir » = notre « c'est la chaise »). Thème n°1.
+2. **Best-of quiz « Question pour un touché »** : réponses absurdes enchaînées (« le bordel de Bart Simpson », « José ») 1,5 M / 1 M.
+3. **« Unpopular opinion » des viewers** recadrés par You (« il a 11 ans, tu le vires tout de suite ») 1,2 M.
+4. **On parle des parents / du père** de quelqu'un → il explose (« le père de You… », « blaze de son père »).
+5. **Argent / dot / couple** (« combien en dot ? », « pour un million… ») 300-500 k.
+6. **Gêne autour d'une fille** sur le plateau (« il est dans le rapport », « ça me met mal à l'aise ») et **rage / ban** (« supprime tout de suite, je me casse »).
+7. Personnages : You, Lawisse, Wiss (wissksrr), Noahlunsi, Dimeh, Lulu (modo) — les clips citent souvent leurs pseudos.
+Forme : 15 à 60 s le plus souvent (jusqu'à 84 s pour un best-of), coupe nette sur la réaction, titre court + emojis, @ du streamer.
