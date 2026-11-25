@@ -22,3 +22,9 @@ Comptes de clips étudiés : @lesclips2you, @clip2twitchdeyouu (+ exemples envoy
   en bas une **phrase de réaction** (« You et Lawisse sont exécrables »). Pas de sous-titres mot à mot, long (≈ 2 min).
 - Leçon : ce qui fait les vues, c'est la **réaction des streamers** (moquerie, gêne) plus que l'histoire du viewer ;
   un titre court et mystérieux qui donne envie de voir.
+
+## Exemple 2 (@clip_you2, 1 M vues, 140 k likes, 56 s) — « Question pour un toucher »
+- Même vidéo que notre premier extrait YouTube (quiz « Question pour un touché »).
+- Contenu : **compilation des pires réponses**, enchaînées très vite (question → réponse absurde → réaction → suivante) :
+  Tesla, périphérique, capitale du Kazakhstan (« Moustapha ? »), crise de 1929 (« pitié »), 3 présidents US…
+- Leçon : pour ce genre de vidéo, **un best-of rythmé de 8-10 moments courts** fait bien plus de vues qu'un seul passage long.
