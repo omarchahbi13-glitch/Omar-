@@ -40,3 +40,12 @@ Types de moments qui cartonnent (contenu seulement) :
 6. **Gêne autour d'une fille** sur le plateau (« il est dans le rapport », « ça me met mal à l'aise ») et **rage / ban** (« supprime tout de suite, je me casse »).
 7. Personnages : You, Lawisse, Wiss (wissksrr), Noahlunsi, Dimeh, Lulu (modo) — les clips citent souvent leurs pseudos.
 Forme : 15 à 60 s le plus souvent (jusqu'à 84 s pour un best-of), coupe nette sur la réaction, titre court + emojis, @ du streamer.
+
+## Wiss (twitch.tv/wissksrr) — lives « appels / pranks » — exemples envoyés le 26/11 (400 k à 1,4 M vues)
+- Wiss appelle des inconnus (annonces Leboncoin, chantier, babysitter, école, boutique) et **joue un personnage / imite une voix**.
+- Ce qui marche : **le moment où l'appel déraille** — la personne au bout du fil ne comprend plus rien, s'énerve ou tombe dans le piège,
+  et Wiss + le groupe craquent de rire. Exemples : faux élève « Anis » qui veut changer de classe ; faux bébé « Soufian » pour une baby-sitter ;
+  Père Noël sur Leboncoin ; « compléments » à une boutique ; transition « chantier ».
+- **Clips longs acceptés** : 36 s à 4 min 20 (souvent 1 min 30 – 2 min) — on garde **l'appel entier** du début du prank à la chute.
+- Titre / description : courts, « Il est trop fou », « Cet appel fallait pas le rater », + @Wissksrr et emojis.
+- À couper : le décroché (« Allô ? »), le pitch du prank, la montée, la chute / le raccroché + fou rire.
