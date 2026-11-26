@@ -93,3 +93,8 @@ Vérifier 3-4 images de chaque rendu (sous-titres lisibles, rien ne se superpose
 
 ## 6. Ménage
 Supprimer du dépôt les dossiers `tiktok/<date>/` de plus de 7 jours (Metricool garde sa propre copie dès la programmation).
+
+## YouTube Shorts (depuis le 26/11)
+Chaque vidéo est aussi publiée en YouTube Short via le même post Metricool (providers tiktok + youtube).
+youtubeData : type "short", privacy "public", madeForKids false, category GAMING (ENTERTAINMENT si pas GTA),
+title = titre accrocheur en français du clip + " #shorts", tags [streamer, gta6, twitch, shorts].
