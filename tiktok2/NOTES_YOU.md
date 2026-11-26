@@ -49,3 +49,5 @@ Forme : 15 à 60 s le plus souvent (jusqu'à 84 s pour un best-of), coupe nette 
 - **Clips longs acceptés** : 36 s à 4 min 20 (souvent 1 min 30 – 2 min) — on garde **l'appel entier** du début du prank à la chute.
 - Titre / description : courts, « Il est trop fou », « Cet appel fallait pas le rater », + @Wissksrr et emojis.
 - À couper : le décroché (« Allô ? »), le pitch du prank, la montée, la chute / le raccroché + fou rire.
+- Consigne du propriétaire (26/11) : si un appel dure plus de 1 min 30, le découper en **PARTIE 1, PARTIE 2, etc.**
+  (chaque partie finit sur un moment fort / un suspense ; titre identique + « PARTIE 1 », « PARTIE 2 »).
